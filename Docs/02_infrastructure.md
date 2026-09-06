@@ -1,4 +1,4 @@
-# Chapter 2 — Infrastructure: Network, Firewall & VPN
+# Chapter 2 - Infrastructure: Network, Firewall & VPN
 
 ## Purpose
 
@@ -37,13 +37,13 @@ flowchart TB
 
 The rule of thumb: the attacker (VLAN 10) can only ever reach the target (VLAN 20), the target can't reach out to anything real, the security team (VLAN 50) can look but not touch, and the isolation network (VLAN 99) doesn't talk to anyone. Everything is deliberately boxed in so a mistake stays a mistake instead of becoming a real incident.
 
-## Firewall — pfSense
+## Firewall - pfSense
 
 pfSense runs as a VM inside Proxmox rather than on dedicated hardware. It is the thing actually enforcing the table above, every VLAN gets its own interface and its own rule set, and the defaults are "deny," not "allow."
 
 The interesting part wasn't drawing the VLAN diagram, it was getting pfSense to actually behave: making sure isolated stays isolated, that the "fake internet" VLAN genuinely has no path to the real one, and that the security VLAN can read without being able to write. Getting the outbound NAT rules right so each VLAN routes exactly where it's supposed to (and nowhere else) took a few iterations.
 
-## Remote access — WireGuard VPN
+## Remote access - WireGuard VPN
 
 Wanted to reach the lab without being physically home.
 

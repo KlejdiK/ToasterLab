@@ -20,7 +20,7 @@ Deliberately cheap (or not, rent is high...)
 | Hypervisor | Proxmox VE |
 | Cost | ~€130 |
 
-## Architecture at a glance
+## Architecture
 
 ```mermaid
 flowchart LR
