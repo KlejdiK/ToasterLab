@@ -1,6 +1,6 @@
 # ToasterLab
 
-A home lab for hands-on blue team / red team practice, networking, and Windows AD — built on a $130 mini PC that fits in one hand.
+A home lab for hands-on blue team / red team practice, networking, and much more.
 
 ## Purpose
 
