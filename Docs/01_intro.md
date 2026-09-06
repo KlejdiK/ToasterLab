@@ -52,4 +52,4 @@ The lab is organized in roughly two phases:
 
 ## What's next
 
-[Chapter 2](02_network.md) covers the network design: which VMs and services I wanted, and how the VLAN segmentation was planned out before any of it was built.
+[Chapter 2](Docs/02_infrastructure.md) covers the network design: which VMs and services I wanted, and how the VLAN segmentation was planned out before any of it was built.
